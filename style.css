@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+:root {
+  background-color: #000;
+}
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: PingFang SC, Droid Sans;
+}
+.bg-bird {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.page {
+  height: 100vh;
+}
+.page1 {
+  /* background-image: url(https://cdn.jsdelivr.net/gh/evolify/files/img/202112302229637.jpeg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page1 .title {
+  font-size: 50px;
+  color: #fff5;
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #fff200,
+    #1e9600
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+}
+.page1 img.main {
+  width: 200px;
+}
+
+.colorful1 {
+  background: linear-gradient(to right, #ff0000, #fff200, #1e9600);
+  color: #fffa;
+  -webkit-background-clip: text;
+}
+
+.page1 .content {
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  /* -webkit-box-reflect: below 2px -webkit-linear-gradient(bottom, #000a, #0000); */
+}
+.page1 .content .time {
+  font-size: 20px;
+}
+.page1 .content .address {
+  font-size: 15px;
+}
+
+/* gallery */
+.page1 {
+  perspective: 800px;
+  perspective-origin: center top;
+}
+.page1::before {
+  content: "";
+  display: inherit;
+  flex-grow: 1;
+}
+
+.gallery {
+  /*133:200  4:6  */
+  margin-bottom: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /*搭建3D效果必须的两个属性：一个变换风格变3d，一个场景景深800px*/
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+.gallery img {
+  width: 100px;
+  position: absolute;
+  box-shadow: 0 0 8px #000000;
+  transform: rotateY(0deg) translateZ(0px);
+  /*倒影：朝向 偏移 遮盖*/
+  /*线性渐变(从哪里开始,开始时候的颜色,结束时候的颜色)*/
+  -webkit-box-reflect: below 5px -webkit-linear-gradient(top, rgba(0, 0, 0, 0)
+        40%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.gallery::after {
+  content: "";
+  display: inherit;
+  width: 1200px;
+  height: 1200px;
+  background: -webkit-radial-gradient(
+    center center,
+    600px 600px,
+    rgba(122, 122, 124, 0.2),
+    rgba(0, 0, 0, 0)
+  );
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 102%;
+  margin-left: -600px;
+  margin-top: -600px;
+  transform: rotateX(90deg);
+}
