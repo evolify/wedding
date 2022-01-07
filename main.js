@@ -2,17 +2,20 @@
 const bg1 = "https://cdn.jsdelivr.net/gh/evolify/files/img/202112302229637.jpeg"
 
 const imgs = [
-  "http://jsdemo.codeman.top/images/incarnation/heguanzhe.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/xiadou.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/baiyuekui.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/ailika.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/jiexika.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/chenmin4277.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/feixue.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/hongkou.jpg", //
-  "http://jsdemo.codeman.top/images/incarnation/peini.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/suixing.jpg",
-  "http://jsdemo.codeman.top/images/incarnation/jingnan.jpg",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043470.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043472.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043473.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043474.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043475.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043476.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043478.jpg",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043479.jpg",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043480.jpg",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043481.jpg",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043482.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043483.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043484.JPG",
+  "https://cdn.jsdelivr.net/gh/evolify/files/img/202201072043485.JPG",
 ]
 
 function initGallery() {
